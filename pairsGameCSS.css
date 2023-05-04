@@ -1,0 +1,113 @@
+div.background img{
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+div.wrapper{
+    align-content: center;
+    height:auto;
+    width: 90%;
+    background-color: gray;
+    box-shadow: rgba(0, 0, 0, 1) 8px 8px 8px;
+    padding: 2.5em 2.5em;
+    box-sizing:content-box;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    border-radius: 0.6em;
+    left: 50%;
+    top: 400px;
+}
+
+div.game-container{
+    position: relative;
+    width: 100%;
+    display: grid;
+    gap: 1%;
+}
+
+div.stats-container{
+    text-align: right;
+    margin-bottom: 1%;
+}
+
+div.stats-container span{
+    font-weight: 600;
+}
+
+.card-container {
+    position: relative;
+    width: 6.25em;
+    height: 6.25em;
+    cursor: pointer;
+}
+
+.card-before,
+.card-after {
+    position: absolute;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid #000000;
+    transition: transform 0.7s ease-out;
+    backface-visibility: hidden;
+}
+
+.card-before {
+    background-color: lightblue;
+    font-size: 2.8em;
+    font-weight: 600;
+}
+.card-after {
+    background-color: #ffffff;
+    transform: rotateY(180deg);
+    object-fit: scale-down;
+    object-position: center;
+    contain: content;
+}
+.card-container.flipped .card-before {
+    transform: rotateY(180deg);
+}
+.card-container.flipped .card-after {
+    transform: rotateY(0deg);
+}
+
+div.controls-container{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    top: 50%;
+    color: white;
+}
+
+.result{
+    color: white;
+}
+
+button{
+    border: none;
+    border-radius: 0.5em;
+    padding: 1em 1.5em;
+    cursor: pointer;
+}
+
+#stop {
+    font-size: 1.1em;
+    display: block;
+    margin: 1.1em auto 0 auto;
+}
+
+.hide {
+    display: none;
+}
+
+.image{
+    position: absolute;
+    width: 92px;
+    height: 92px;
+}

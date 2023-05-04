@@ -1,0 +1,37 @@
+div.background img{
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.data-entry{
+    vertical-align: middle;
+    width:80%;
+    height: 80%;
+    margin:auto;
+    text-align: left;
+}
+
+form.main{
+    height: fit-content;
+    margin: 2.5%;
+    background-color: aqua;
+    scale: 90%;
+}
+
+div.mainDiv{
+    scale: 90%;
+    height: 100%;
+}
+
+ul.mainBody{
+    list-style: none;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+span.error{
+    color: red;
+    font-size: larger;
+}
